@@ -160,7 +160,7 @@ sys	1m51.272s
 RAM 933/3965MB (lfb 326x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@35.5C CPU@38.5C iwlwifi@37C PMIC@100C GPU@37.5C AO@43C thermal@38C POM_5V_IN 1661/1661 POM_5V_GPU 0/0 POM_5V_CPU 166/166
 + sleep 60
 + sudo reboot now
-Connection to jetsonnano.local closed by remote host.
+Connection to jetsonnano.local closed by remote host.
 Wed Jul  3 23:52:57 CEST 2019
 + for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
 + echo performance
@@ -316,7 +316,7 @@ sys	1m51.156s
 RAM 873/3965MB (lfb 456x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@35C CPU@38C iwlwifi@37C PMIC@100C GPU@37C AO@42.5C thermal@37C POM_5V_IN 1661/1661 POM_5V_GPU 0/0 POM_5V_CPU 124/124
 + sleep 60
 + sudo reboot now
-Connection to jetsonnano.local closed by remote host.
+Connection to jetsonnano.local closed by remote host.
 Thu Jul  4 00:34:12 CEST 2019
 + for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
 + echo performance
@@ -472,7 +472,7 @@ sys	1m51.016s
 RAM 869/3965MB (lfb 461x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@35.5C CPU@38.5C iwlwifi@37C PMIC@100C GPU@37.5C AO@43.5C thermal@38C POM_5V_IN 1661/1661 POM_5V_GPU 0/0 POM_5V_CPU 166/166
 + sleep 60
 + sudo reboot now
-Connection to jetsonnano.local closed by remote host.
+Connection to jetsonnano.local closed by remote host.
 Thu Jul  4 01:15:25 CEST 2019
 + for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
 + echo performance
@@ -628,7 +628,7 @@ sys	1m50.792s
 RAM 871/3965MB (lfb 465x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@35.5C CPU@38.5C iwlwifi@37C PMIC@100C GPU@37.5C AO@43.5C thermal@38C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 124/124
 + sleep 60
 + sudo reboot now
-Connection to jetsonnano.local closed by remote host.
+Connection to jetsonnano.local closed by remote host.
 Thu Jul  4 01:56:38 CEST 2019
 + for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
 + echo performance
@@ -784,7 +784,7 @@ sys	1m51.028s
 RAM 867/3965MB (lfb 465x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@33.5C CPU@36.5C iwlwifi@35C PMIC@100C GPU@35.5C AO@41C thermal@35.25C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 124/124
 + sleep 60
 + sudo reboot now
-Connection to jetsonnano.local closed by remote host.
+Connection to jetsonnano.local closed by remote host.
 Thu Jul  4 02:37:52 CEST 2019
 + for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
 + echo performance
@@ -940,7 +940,7 @@ sys	1m50.632s
 RAM 872/3965MB (lfb 460x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@33.5C CPU@36.5C iwlwifi@35C PMIC@100C GPU@35.5C AO@40.5C thermal@35.25C POM_5V_IN 1622/1622 POM_5V_GPU 0/0 POM_5V_CPU 166/166
 + sleep 60
 + sudo reboot now
-Connection to jetsonnano.local closed by remote host.
+Connection to jetsonnano.local closed by remote host.
 Thu Jul  4 03:19:07 CEST 2019
 + for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
 + echo performance
@@ -1096,7 +1096,7 @@ sys	1m51.144s
 RAM 868/3965MB (lfb 445x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@33C CPU@36C iwlwifi@35C PMIC@100C GPU@35C AO@40.5C thermal@34.75C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 124/124
 + sleep 60
 + sudo reboot now
-Connection to jetsonnano.local closed by remote host.
+Connection to jetsonnano.local closed by remote host.
 Thu Jul  4 04:00:24 CEST 2019
 + for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
 + echo performance
@@ -1252,7 +1252,7 @@ sys	1m51.592s
 RAM 870/3965MB (lfb 469x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@33C CPU@36C iwlwifi@35C PMIC@100C GPU@35C AO@40.5C thermal@35C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 166/166
 + sleep 60
 + sudo reboot now
-Connection to jetsonnano.local closed by remote host.
+Connection to jetsonnano.local closed by remote host.
 Thu Jul  4 04:41:38 CEST 2019
 + for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
 + echo performance
@@ -1408,7 +1408,7 @@ sys	1m50.784s
 RAM 871/3965MB (lfb 464x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@33C CPU@36.5C iwlwifi@35C PMIC@100C GPU@35C AO@40.5C thermal@35.75C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 166/166
 + sleep 60
 + sudo reboot now
-Connection to jetsonnano.local closed by remote host.
+Connection to jetsonnano.local closed by remote host.
 Thu Jul  4 05:22:52 CEST 2019
 + for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
 + echo performance
@@ -1564,7 +1564,7 @@ sys	1m51.212s
 RAM 868/3965MB (lfb 469x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@33.5C CPU@36C iwlwifi@35C PMIC@100C GPU@35.5C AO@40.5C thermal@35C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 166/166
 + sleep 60
 + sudo reboot now
-Connection to jetsonnano.local closed by remote host.
+Connection to jetsonnano.local closed by remote host.
 Thu Jul  4 06:04:05 CEST 2019
 + for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
 + echo performance
@@ -1720,7 +1720,7 @@ sys	1m51.192s
 RAM 878/3965MB (lfb 441x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@33.5C CPU@36C iwlwifi@35C PMIC@100C GPU@35.5C AO@40.5C thermal@35.75C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 166/166
 + sleep 60
 + sudo reboot now
-Connection to jetsonnano.local closed by remote host.
+Connection to jetsonnano.local closed by remote host.
 Thu Jul  4 06:45:20 CEST 2019
 + for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
 + echo performance
@@ -1855,34 +1855,7 @@ Created engine
 Allocating buffer sizes for binding index: 0 of size : 270000 * 4 B
 Allocating buffer sizes for binding index: 1 of size : 700 * 4 B
 Allocating buffer sizes for binding index: 2 of size : 1 * 4 B
-^C^C
-localhost(~): ^C
-localhost(~): ^C
-localhost(~): ^C
-localhost(~): ^C
-localhost(~): ^C
-localhost(~): ^C
-localhost(~): ^C
-localhost(~): ^C
-localhost(~): ^C
-localhost(~): ^C
-localhost(~): ^C
-localhost(~): ^C
-localhost(~): ^C
-localhost(~): ^C
-localhost(~): ^C
-localhost(~): ^C
-localhost(~): ^C
-localhost(~): ^C
-localhost(~): ^C
-localhost(~): ^C
-localhost(~): ^C
-localhost(~): ^C
-localhost(~): ^C
-localhost(~): ^C
-localhost(~): ^C
-localhost(~): ^C
-localhost(~): ^C
+^C
 localhost(~): exit
 
 Script done on Thu Jul  4 07:19:26 2019

@@ -208,7 +208,7 @@ sys	1m43.660s
 RAM 884/3965MB (lfb 383x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@45.5C CPU@48.5C iwlwifi@41C PMIC@100C GPU@46.5C AO@54C thermal@47.75C POM_5V_IN 2191/2191 POM_5V_GPU 206/206 POM_5V_CPU 413/413
 + sleep 60
 + sudo reboot now
-Connection to jetsonnano.local closed by remote host.
+Connection to jetsonnano.local closed by remote host.
 Thu Jul  4 22:10:12 CEST 2019
 + cd /usr/src/tensorrt/bin
 + cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
@@ -417,7 +417,7 @@ sys	1m43.656s
 RAM 869/3965MB (lfb 475x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@47C CPU@49.5C iwlwifi@43C PMIC@100C GPU@48C AO@55.5C thermal@48.5C POM_5V_IN 2232/2232 POM_5V_GPU 206/206 POM_5V_CPU 412/412
 + sleep 60
 + sudo reboot now
-Connection to jetsonnano.local closed by remote host.
+Connection to jetsonnano.local closed by remote host.
 Thu Jul  4 22:32:46 CEST 2019
 + cd /usr/src/tensorrt/bin
 + cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
@@ -626,7 +626,7 @@ sys	1m43.560s
 RAM 898/3965MB (lfb 457x4MB) CPU [0%@1428,0%@1428,1%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@47C CPU@49.5C iwlwifi@43C PMIC@100C GPU@48C AO@55.5C thermal@49C POM_5V_IN 2232/2232 POM_5V_GPU 206/206 POM_5V_CPU 412/412
 + sleep 60
 + sudo reboot now
-Connection to jetsonnano.local closed by remote host.
+Connection to jetsonnano.local closed by remote host.
 Thu Jul  4 22:54:49 CEST 2019
 + cd /usr/src/tensorrt/bin
 + cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
@@ -835,7 +835,7 @@ sys	1m43.812s
 RAM 872/3965MB (lfb 469x4MB) CPU [2%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@46.5C CPU@49C iwlwifi@43C PMIC@100C GPU@47.5C AO@55C thermal@48.5C POM_5V_IN 2232/2232 POM_5V_GPU 206/206 POM_5V_CPU 413/413
 + sleep 60
 + sudo reboot now
-Connection to jetsonnano.local closed by remote host.
+Connection to jetsonnano.local closed by remote host.
 Thu Jul  4 23:17:57 CEST 2019
 + cd /usr/src/tensorrt/bin
 + cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
@@ -1044,7 +1044,7 @@ sys	1m44.064s
 RAM 864/3965MB (lfb 471x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@47C CPU@49.5C iwlwifi@42C PMIC@100C GPU@47.5C AO@55C thermal@48.25C POM_5V_IN 2232/2232 POM_5V_GPU 206/206 POM_5V_CPU 413/413
 + sleep 60
 + sudo reboot now
-Connection to jetsonnano.local closed by remote host.
+Connection to jetsonnano.local closed by remote host.
 Thu Jul  4 23:40:20 CEST 2019
 + cd /usr/src/tensorrt/bin
 + cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
@@ -1253,7 +1253,7 @@ sys	1m43.680s
 RAM 870/3965MB (lfb 459x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@46.5C CPU@49C iwlwifi@42C PMIC@100C GPU@47.5C AO@55C thermal@48.25C POM_5V_IN 2232/2232 POM_5V_GPU 206/206 POM_5V_CPU 413/413
 + sleep 60
 + sudo reboot now
-Connection to jetsonnano.local closed by remote host.
+Connection to jetsonnano.local closed by remote host.
 Fri Jul  5 00:03:21 CEST 2019
 + cd /usr/src/tensorrt/bin
 + cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
@@ -1462,7 +1462,7 @@ sys	1m44.028s
 RAM 870/3965MB (lfb 462x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@48C CPU@50.5C iwlwifi@43C PMIC@100C GPU@49C AO@56C thermal@49.75C POM_5V_IN 2232/2232 POM_5V_GPU 206/206 POM_5V_CPU 413/413
 + sleep 60
 + sudo reboot now
-Connection to jetsonnano.local closed by remote host.
+Connection to jetsonnano.local closed by remote host.
 Fri Jul  5 00:25:24 CEST 2019
 + cd /usr/src/tensorrt/bin
 + cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
@@ -1671,7 +1671,7 @@ sys	1m43.924s
 RAM 870/3965MB (lfb 471x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@47.5C CPU@50C iwlwifi@43C PMIC@100C GPU@48.5C AO@55.5C thermal@49.25C POM_5V_IN 2232/2232 POM_5V_GPU 206/206 POM_5V_CPU 413/413
 + sleep 60
 + sudo reboot now
-Connection to jetsonnano.local closed by remote host.
+Connection to jetsonnano.local closed by remote host.
 Fri Jul  5 00:47:49 CEST 2019
 + cd /usr/src/tensorrt/bin
 + cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
@@ -1880,7 +1880,7 @@ sys	1m43.620s
 RAM 869/3965MB (lfb 471x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@47.5C CPU@50C iwlwifi@43C PMIC@100C GPU@48.5C AO@56C thermal@49.75C POM_5V_IN 2232/2232 POM_5V_GPU 206/206 POM_5V_CPU 413/413
 + sleep 60
 + sudo reboot now
-Connection to jetsonnano.local closed by remote host.
+Connection to jetsonnano.local closed by remote host.
 Fri Jul  5 01:10:06 CEST 2019
 + cd /usr/src/tensorrt/bin
 + cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
@@ -2089,7 +2089,7 @@ sys	1m44.288s
 RAM 872/3965MB (lfb 472x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@48C CPU@50.5C iwlwifi@43C PMIC@100C GPU@48.5C AO@56C thermal@49.5C POM_5V_IN 2232/2232 POM_5V_GPU 206/206 POM_5V_CPU 413/413
 + sleep 60
 + sudo reboot now
-Connection to jetsonnano.local closed by remote host.
+Connection to jetsonnano.local closed by remote host.
 Fri Jul  5 01:32:14 CEST 2019
 + cd /usr/src/tensorrt/bin
 + cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
@@ -2298,7 +2298,7 @@ sys	1m43.636s
 RAM 866/3965MB (lfb 473x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@47C CPU@50C iwlwifi@43C PMIC@100C GPU@48C AO@55.5C thermal@49.5C POM_5V_IN 2232/2232 POM_5V_GPU 206/206 POM_5V_CPU 413/413
 + sleep 60
 + sudo reboot now
-Connection to jetsonnano.local closed by remote host.
+Connection to jetsonnano.local closed by remote host.
 Fri Jul  5 01:55:01 CEST 2019
 + cd /usr/src/tensorrt/bin
 + cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
@@ -2507,7 +2507,7 @@ sys	1m43.888s
 RAM 871/3965MB (lfb 470x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@47.5C CPU@50.5C iwlwifi@43C PMIC@100C GPU@48.5C AO@55.5C thermal@49.5C POM_5V_IN 2232/2232 POM_5V_GPU 206/206 POM_5V_CPU 413/413
 + sleep 60
 + sudo reboot now
-Connection to jetsonnano.local closed by remote host.
+Connection to jetsonnano.local closed by remote host.
 Fri Jul  5 02:17:14 CEST 2019
 + cd /usr/src/tensorrt/bin
 + cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
@@ -2716,7 +2716,7 @@ sys	1m43.768s
 RAM 876/3965MB (lfb 470x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@47.5C CPU@50.5C iwlwifi@43C PMIC@100C GPU@49C AO@55.5C thermal@49.75C POM_5V_IN 2232/2232 POM_5V_GPU 206/206 POM_5V_CPU 413/413
 + sleep 60
 + sudo reboot now
-Connection to jetsonnano.local closed by remote host.
+Connection to jetsonnano.local closed by remote host.
 Fri Jul  5 02:39:30 CEST 2019
 + cd /usr/src/tensorrt/bin
 + cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
@@ -2925,7 +2925,7 @@ sys	1m43.992s
 RAM 915/3965MB (lfb 457x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@47.5C CPU@50.5C iwlwifi@43C PMIC@100C GPU@49C AO@56C thermal@49.75C POM_5V_IN 2232/2232 POM_5V_GPU 206/206 POM_5V_CPU 413/413
 + sleep 60
 + sudo reboot now
-Connection to jetsonnano.local closed by remote host.
+Connection to jetsonnano.local closed by remote host.
 Fri Jul  5 03:01:36 CEST 2019
 + cd /usr/src/tensorrt/bin
 + cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
@@ -3134,7 +3134,7 @@ sys	1m43.672s
 RAM 872/3965MB (lfb 466x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@47.5C CPU@50.5C iwlwifi@43C PMIC@100C GPU@49C AO@56C thermal@50C POM_5V_IN 2232/2232 POM_5V_GPU 206/206 POM_5V_CPU 413/413
 + sleep 60
 + sudo reboot now
-Connection to jetsonnano.local closed by remote host.
+Connection to jetsonnano.local closed by remote host.
 Fri Jul  5 03:23:43 CEST 2019
 + cd /usr/src/tensorrt/bin
 + cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
@@ -3343,7 +3343,7 @@ sys	1m43.716s
 RAM 871/3965MB (lfb 471x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@47C CPU@50.5C iwlwifi@43C PMIC@100C GPU@49C AO@55C thermal@49.75C POM_5V_IN 2232/2232 POM_5V_GPU 206/206 POM_5V_CPU 413/413
 + sleep 60
 + sudo reboot now
-Connection to jetsonnano.local closed by remote host.
+Connection to jetsonnano.local closed by remote host.
 Fri Jul  5 03:45:53 CEST 2019
 + cd /usr/src/tensorrt/bin
 + cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
@@ -3552,7 +3552,7 @@ sys	1m44.264s
 RAM 873/3965MB (lfb 458x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@47.5C CPU@50C iwlwifi@43C PMIC@100C GPU@48.5C AO@55.5C thermal@49.25C POM_5V_IN 2232/2232 POM_5V_GPU 206/206 POM_5V_CPU 413/413
 + sleep 60
 + sudo reboot now
-Connection to jetsonnano.local closed by remote host.
+Connection to jetsonnano.local closed by remote host.
 Fri Jul  5 04:08:20 CEST 2019
 + cd /usr/src/tensorrt/bin
 + cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
@@ -3761,7 +3761,7 @@ sys	1m43.952s
 RAM 878/3965MB (lfb 465x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@47C CPU@50C iwlwifi@43C PMIC@100C GPU@48.5C AO@55.5C thermal@49.25C POM_5V_IN 2232/2232 POM_5V_GPU 206/206 POM_5V_CPU 413/413
 + sleep 60
 + sudo reboot now
-Connection to jetsonnano.local closed by remote host.
+Connection to jetsonnano.local closed by remote host.
 Fri Jul  5 04:31:06 CEST 2019
 + cd /usr/src/tensorrt/bin
 + cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
@@ -3970,7 +3970,7 @@ sys	1m44.188s
 RAM 872/3965MB (lfb 473x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@47.5C CPU@50.5C iwlwifi@43C PMIC@100C GPU@49.5C AO@56.5C thermal@50C POM_5V_IN 2232/2232 POM_5V_GPU 206/206 POM_5V_CPU 413/413
 + sleep 60
 + sudo reboot now
-Connection to jetsonnano.local closed by remote host.
+Connection to jetsonnano.local closed by remote host.
 Fri Jul  5 04:53:11 CEST 2019
 + cd /usr/src/tensorrt/bin
 + cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
@@ -4179,7 +4179,7 @@ sys	1m43.576s
 RAM 871/3965MB (lfb 468x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@47C CPU@50C iwlwifi@43C PMIC@100C GPU@48.5C AO@55.5C thermal@49.5C POM_5V_IN 2232/2232 POM_5V_GPU 206/206 POM_5V_CPU 413/413
 + sleep 60
 + sudo reboot now
-Connection to jetsonnano.local closed by remote host.
+Connection to jetsonnano.local closed by remote host.
 Fri Jul  5 05:15:43 CEST 2019
 + cd /usr/src/tensorrt/bin
 + cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
@@ -4388,7 +4388,7 @@ sys	1m43.868s
 RAM 871/3965MB (lfb 477x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@47.5C CPU@50C iwlwifi@43C PMIC@100C GPU@48.5C AO@56C thermal@49.5C POM_5V_IN 2232/2232 POM_5V_GPU 206/206 POM_5V_CPU 413/413
 + sleep 60
 + sudo reboot now
-Connection to jetsonnano.local closed by remote host.
+Connection to jetsonnano.local closed by remote host.
 Fri Jul  5 05:38:01 CEST 2019
 + cd /usr/src/tensorrt/bin
 + cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
@@ -4597,7 +4597,7 @@ sys	1m43.996s
 RAM 873/3965MB (lfb 478x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@47.5C CPU@50.5C iwlwifi@43C PMIC@100C GPU@48.5C AO@56C thermal@49.75C POM_5V_IN 2232/2232 POM_5V_GPU 206/206 POM_5V_CPU 413/413
 + sleep 60
 + sudo reboot now
-Connection to jetsonnano.local closed by remote host.
+Connection to jetsonnano.local closed by remote host.
 Fri Jul  5 06:00:07 CEST 2019
 + cd /usr/src/tensorrt/bin
 + cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
@@ -4806,7 +4806,7 @@ sys	1m44.376s
 RAM 872/3965MB (lfb 470x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@47C CPU@50C iwlwifi@43C PMIC@100C GPU@48.5C AO@56C thermal@49C POM_5V_IN 2232/2232 POM_5V_GPU 206/206 POM_5V_CPU 413/413
 + sleep 60
 + sudo reboot now
-Connection to jetsonnano.local closed by remote host.
+Connection to jetsonnano.local closed by remote host.
 Fri Jul  5 06:22:18 CEST 2019
 + cd /usr/src/tensorrt/bin
 + cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
@@ -5015,7 +5015,7 @@ sys	1m43.344s
 RAM 915/3965MB (lfb 458x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@47C CPU@50.5C iwlwifi@43C PMIC@100C GPU@49C AO@56C thermal@49.75C POM_5V_IN 2232/2232 POM_5V_GPU 206/206 POM_5V_CPU 413/413
 + sleep 60
 + sudo reboot now
-Connection to jetsonnano.local closed by remote host.
+Connection to jetsonnano.local closed by remote host.
 Fri Jul  5 06:44:18 CEST 2019
 + cd /usr/src/tensorrt/bin
 + cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
@@ -5224,7 +5224,7 @@ sys	1m44.056s
 RAM 896/3965MB (lfb 305x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@47.5C CPU@50.5C iwlwifi@43C PMIC@100C GPU@48.5C AO@56C thermal@49.75C POM_5V_IN 2232/2232 POM_5V_GPU 206/206 POM_5V_CPU 413/413
 + sleep 60
 + sudo reboot now
-Connection to jetsonnano.local closed by remote host.
+Connection to jetsonnano.local closed by remote host.
 Fri Jul  5 07:06:43 CEST 2019
 + cd /usr/src/tensorrt/bin
 + cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
@@ -5433,7 +5433,7 @@ sys	1m44.288s
 RAM 869/3965MB (lfb 467x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@47C CPU@50C iwlwifi@43C PMIC@100C GPU@48.5C AO@55.5C thermal@49.25C POM_5V_IN 2232/2232 POM_5V_GPU 206/206 POM_5V_CPU 413/413
 + sleep 60
 + sudo reboot now
-Connection to jetsonnano.local closed by remote host.
+Connection to jetsonnano.local closed by remote host.
 ^C
 localhost(~): exit
 
