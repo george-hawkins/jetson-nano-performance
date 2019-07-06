@@ -1,0 +1,1888 @@
+Script started on Wed Jul  3 23:06:04 2019
+localhost(~): while true
+> do
+> date
+> ssh ghawkins@jetsonnano.local ./performance-test
+> sleep 120
+> done
+Wed Jul  3 23:07:19 CEST 2019
++ for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
++ echo performance
++ sudo tee -a /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+performance
++ for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
++ echo performance
++ sudo tee -a /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor
+performance
++ for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
++ echo performance
++ sudo tee -a /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor
+performance
++ for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
++ echo performance
++ sudo tee -a /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
+performance
++ echo performance
++ sudo tee -a /sys/devices/57000000.gpu/devfreq/57000000.gpu/governor
+performance
++ cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
+performance
+performance
+performance
+performance
++ cat /sys/devices/57000000.gpu/devfreq/57000000.gpu/governor
+performance
++ cd /usr/src/tensorrt/bin
++ for i in {1..3}
++ timeout 2s tegrastats
+RAM 1656/3965MB (lfb 345x4MB) CPU [14%@1428,21%@1428,4%@1428,5%@1428] EMC_FREQ 0% GR3D_FREQ 87% PLL@33C CPU@36C iwlwifi@35C PMIC@100C GPU@33.5C AO@40.5C thermal@35.5C POM_5V_IN 2232/2232 POM_5V_GPU 206/206 POM_5V_CPU 454/454
++ sudo ./sample_uff_ssd_rect
+../data/ssd/sample_unpruned_mobilenet_v2.uff
+Registering UFF model
+Registered Input
+Registered output NMS
+Creating engine
+Begin parsing model...
+End parsing model...
+Begin building engine...
+Time lapsed to create an engine: 708722ms
+End building engine...
+Created engine
+ Num batches  1
+ Data Size  270000
+*** deserializing
+3 Binding
+Allocating buffer sizes for binding index: 0 of size : 270000 * 4 B
+Allocating buffer sizes for binding index: 1 of size : 700 * 4 B
+Allocating buffer sizes for binding index: 2 of size : 1 * 4 B
+Time taken for inference per run is 273.099 ms.
+Time taken for inference per run is 273.065 ms.
+Time taken for inference per run is 273.056 ms.
+Time taken for inference per run is 273.059 ms.
+Time taken for inference per run is 273.08 ms.
+Time taken for inference per run is 273.108 ms.
+Time taken for inference per run is 273.06 ms.
+Time taken for inference per run is 273.098 ms.
+Time taken for inference per run is 273.13 ms.
+Time taken for inference per run is 273.059 ms.
+Average time spent per iteration is 273.082 ms.
+Time taken for inference is 273.059 ms.
+ KeepCount 100
+
+real	16m24.576s
+user	0m43.516s
+sys	2m5.940s
++ timeout 2s tegrastats
+RAM 929/3965MB (lfb 326x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@34.5C CPU@38C iwlwifi@37C PMIC@100C GPU@36.5C AO@42.5C thermal@37.25C POM_5V_IN 1661/1661 POM_5V_GPU 0/0 POM_5V_CPU 166/166
++ sleep 60
++ for i in {1..3}
++ timeout 2s tegrastats
+RAM 929/3965MB (lfb 326x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@34C CPU@37C iwlwifi@37C PMIC@100C GPU@36C AO@41.5C thermal@36.5C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 124/124
++ sudo ./sample_uff_ssd_rect
+../data/ssd/sample_unpruned_mobilenet_v2.uff
+Registering UFF model
+Registered Input
+Registered output NMS
+Creating engine
+Begin parsing model...
+End parsing model...
+Begin building engine...
+Time lapsed to create an engine: 455577ms
+End building engine...
+Created engine
+ Num batches  1
+ Data Size  270000
+*** deserializing
+3 Binding
+Allocating buffer sizes for binding index: 0 of size : 270000 * 4 B
+Allocating buffer sizes for binding index: 1 of size : 700 * 4 B
+Allocating buffer sizes for binding index: 2 of size : 1 * 4 B
+Time taken for inference per run is 262.754 ms.
+Time taken for inference per run is 262.72 ms.
+Time taken for inference per run is 262.716 ms.
+Time taken for inference per run is 262.727 ms.
+Time taken for inference per run is 262.715 ms.
+Time taken for inference per run is 262.704 ms.
+Time taken for inference per run is 262.718 ms.
+Time taken for inference per run is 262.715 ms.
+Time taken for inference per run is 262.709 ms.
+Time taken for inference per run is 262.71 ms.
+Average time spent per iteration is 262.719 ms.
+Time taken for inference is 262.71 ms.
+ KeepCount 100
+
+real	12m0.877s
+user	0m38.692s
+sys	1m51.368s
++ timeout 2s tegrastats
+RAM 929/3965MB (lfb 326x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@35C CPU@38C iwlwifi@37C PMIC@100C GPU@37C AO@42.5C thermal@37.5C POM_5V_IN 1661/1661 POM_5V_GPU 0/0 POM_5V_CPU 166/166
++ sleep 60
++ for i in {1..3}
++ timeout 2s tegrastats
+RAM 929/3965MB (lfb 326x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@34.5C CPU@37.5C iwlwifi@37C PMIC@100C GPU@36C AO@42C thermal@37C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 124/124
++ sudo ./sample_uff_ssd_rect
+../data/ssd/sample_unpruned_mobilenet_v2.uff
+Registering UFF model
+Registered Input
+Registered output NMS
+Creating engine
+Begin parsing model...
+End parsing model...
+Begin building engine...
+Time lapsed to create an engine: 454887ms
+End building engine...
+Created engine
+ Num batches  1
+ Data Size  270000
+*** deserializing
+3 Binding
+Allocating buffer sizes for binding index: 0 of size : 270000 * 4 B
+Allocating buffer sizes for binding index: 1 of size : 700 * 4 B
+Allocating buffer sizes for binding index: 2 of size : 1 * 4 B
+Time taken for inference per run is 262.683 ms.
+Time taken for inference per run is 262.695 ms.
+Time taken for inference per run is 262.701 ms.
+Time taken for inference per run is 262.679 ms.
+Time taken for inference per run is 262.709 ms.
+Time taken for inference per run is 262.683 ms.
+Time taken for inference per run is 262.639 ms.
+Time taken for inference per run is 262.695 ms.
+Time taken for inference per run is 262.66 ms.
+Time taken for inference per run is 262.694 ms.
+Average time spent per iteration is 262.684 ms.
+Time taken for inference is 262.694 ms.
+ KeepCount 100
+
+real	12m0.042s
+user	0m38.924s
+sys	1m51.272s
++ timeout 2s tegrastats
+RAM 933/3965MB (lfb 326x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@35.5C CPU@38.5C iwlwifi@37C PMIC@100C GPU@37.5C AO@43C thermal@38C POM_5V_IN 1661/1661 POM_5V_GPU 0/0 POM_5V_CPU 166/166
++ sleep 60
++ sudo reboot now
+Connection to jetsonnano.local closed by remote host.
+Wed Jul  3 23:52:57 CEST 2019
++ for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
++ echo performance
++ sudo tee -a /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+performance
++ for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
++ echo performance
++ sudo tee -a /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor
+performance
++ for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
++ echo performance
++ sudo tee -a /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor
+performance
++ for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
++ echo performance
++ sudo tee -a /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
+performance
++ sudo tee -a /sys/devices/57000000.gpu/devfreq/57000000.gpu/governor
++ echo performance
+performance
++ cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
+performance
+performance
+performance
+performance
++ cat /sys/devices/57000000.gpu/devfreq/57000000.gpu/governor
+performance
++ cd /usr/src/tensorrt/bin
++ for i in {1..3}
++ timeout 2s tegrastats
+RAM 423/3965MB (lfb 811x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@33C CPU@36C iwlwifi@37C PMIC@100C GPU@36C AO@40.5C thermal@36.25C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 124/124
++ sudo ./sample_uff_ssd_rect
+../data/ssd/sample_unpruned_mobilenet_v2.uff
+Registering UFF model
+Registered Input
+Registered output NMS
+Creating engine
+Begin parsing model...
+End parsing model...
+Begin building engine...
+Time lapsed to create an engine: 456117ms
+End building engine...
+Created engine
+ Num batches  1
+ Data Size  270000
+*** deserializing
+3 Binding
+Allocating buffer sizes for binding index: 0 of size : 270000 * 4 B
+Allocating buffer sizes for binding index: 1 of size : 700 * 4 B
+Allocating buffer sizes for binding index: 2 of size : 1 * 4 B
+Time taken for inference per run is 262.569 ms.
+Time taken for inference per run is 262.679 ms.
+Time taken for inference per run is 262.677 ms.
+Time taken for inference per run is 262.669 ms.
+Time taken for inference per run is 262.659 ms.
+Time taken for inference per run is 262.672 ms.
+Time taken for inference per run is 262.673 ms.
+Time taken for inference per run is 262.694 ms.
+Time taken for inference per run is 262.674 ms.
+Time taken for inference per run is 262.654 ms.
+Average time spent per iteration is 262.662 ms.
+Time taken for inference is 262.654 ms.
+ KeepCount 100
+
+real	12m3.323s
+user	0m38.412s
+sys	1m50.956s
++ timeout 2s tegrastats
+RAM 871/3965MB (lfb 470x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@35C CPU@38C iwlwifi@37C PMIC@100C GPU@37C AO@42.5C thermal@37.5C POM_5V_IN 1661/1661 POM_5V_GPU 0/0 POM_5V_CPU 166/166
++ sleep 60
++ for i in {1..3}
++ timeout 2s tegrastats
+RAM 873/3965MB (lfb 469x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@34.5C CPU@37.5C iwlwifi@37C PMIC@100C GPU@36.5C AO@42C thermal@37C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 166/166
++ sudo ./sample_uff_ssd_rect
+../data/ssd/sample_unpruned_mobilenet_v2.uff
+Registering UFF model
+Registered Input
+Registered output NMS
+Creating engine
+Begin parsing model...
+End parsing model...
+Begin building engine...
+Time lapsed to create an engine: 453702ms
+End building engine...
+Created engine
+ Num batches  1
+ Data Size  270000
+*** deserializing
+3 Binding
+Allocating buffer sizes for binding index: 0 of size : 270000 * 4 B
+Allocating buffer sizes for binding index: 1 of size : 700 * 4 B
+Allocating buffer sizes for binding index: 2 of size : 1 * 4 B
+Time taken for inference per run is 262.231 ms.
+Time taken for inference per run is 262.179 ms.
+Time taken for inference per run is 262.116 ms.
+Time taken for inference per run is 262.17 ms.
+Time taken for inference per run is 262.091 ms.
+Time taken for inference per run is 262.154 ms.
+Time taken for inference per run is 262.069 ms.
+Time taken for inference per run is 262.122 ms.
+Time taken for inference per run is 262.081 ms.
+Time taken for inference per run is 262.151 ms.
+Average time spent per iteration is 262.136 ms.
+Time taken for inference is 262.151 ms.
+ KeepCount 100
+
+real	11m58.362s
+user	0m38.900s
+sys	1m50.444s
++ timeout 2s tegrastats
+RAM 874/3965MB (lfb 459x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@35.5C CPU@38C iwlwifi@37C PMIC@100C GPU@37.5C AO@43C thermal@37.75C POM_5V_IN 1661/1661 POM_5V_GPU 0/0 POM_5V_CPU 124/124
++ sleep 60
++ for i in {1..3}
++ timeout 2s tegrastats
+RAM 874/3965MB (lfb 459x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@34.5C CPU@37.5C iwlwifi@37C PMIC@100C GPU@36.5C AO@42C thermal@36.75C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 166/166
++ sudo ./sample_uff_ssd_rect
+../data/ssd/sample_unpruned_mobilenet_v2.uff
+Registering UFF model
+Registered Input
+Registered output NMS
+Creating engine
+Begin parsing model...
+End parsing model...
+Begin building engine...
+Time lapsed to create an engine: 454857ms
+End building engine...
+Created engine
+ Num batches  1
+ Data Size  270000
+*** deserializing
+3 Binding
+Allocating buffer sizes for binding index: 0 of size : 270000 * 4 B
+Allocating buffer sizes for binding index: 1 of size : 700 * 4 B
+Allocating buffer sizes for binding index: 2 of size : 1 * 4 B
+Time taken for inference per run is 262.54 ms.
+Time taken for inference per run is 262.438 ms.
+Time taken for inference per run is 262.438 ms.
+Time taken for inference per run is 262.246 ms.
+Time taken for inference per run is 262.572 ms.
+Time taken for inference per run is 262.563 ms.
+Time taken for inference per run is 262.545 ms.
+Time taken for inference per run is 262.429 ms.
+Time taken for inference per run is 262.403 ms.
+Time taken for inference per run is 262.521 ms.
+Average time spent per iteration is 262.47 ms.
+Time taken for inference is 262.521 ms.
+ KeepCount 100
+
+real	11m59.866s
+user	0m38.904s
+sys	1m51.156s
++ timeout 2s tegrastats
+RAM 873/3965MB (lfb 456x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@35C CPU@38C iwlwifi@37C PMIC@100C GPU@37C AO@42.5C thermal@37C POM_5V_IN 1661/1661 POM_5V_GPU 0/0 POM_5V_CPU 124/124
++ sleep 60
++ sudo reboot now
+Connection to jetsonnano.local closed by remote host.
+Thu Jul  4 00:34:12 CEST 2019
++ for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
++ echo performance
++ sudo tee -a /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+performance
++ for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
++ echo performance
++ sudo tee -a /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor
+performance
++ for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
++ echo performance
++ sudo tee -a /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor
+performance
++ for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
++ echo performance
++ sudo tee -a /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
+performance
++ echo performance
++ sudo tee -a /sys/devices/57000000.gpu/devfreq/57000000.gpu/governor
+performance
++ cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
+performance
+performance
+performance
+performance
++ cat /sys/devices/57000000.gpu/devfreq/57000000.gpu/governor
+performance
++ cd /usr/src/tensorrt/bin
++ for i in {1..3}
++ timeout 2s tegrastats
+RAM 421/3965MB (lfb 812x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@33.5C CPU@37C iwlwifi@37C PMIC@100C GPU@36C AO@40.5C thermal@36.5C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 124/124
++ sudo ./sample_uff_ssd_rect
+../data/ssd/sample_unpruned_mobilenet_v2.uff
+Registering UFF model
+Registered Input
+Registered output NMS
+Creating engine
+Begin parsing model...
+End parsing model...
+Begin building engine...
+Time lapsed to create an engine: 457606ms
+End building engine...
+Created engine
+ Num batches  1
+ Data Size  270000
+*** deserializing
+3 Binding
+Allocating buffer sizes for binding index: 0 of size : 270000 * 4 B
+Allocating buffer sizes for binding index: 1 of size : 700 * 4 B
+Allocating buffer sizes for binding index: 2 of size : 1 * 4 B
+Time taken for inference per run is 262.582 ms.
+Time taken for inference per run is 262.678 ms.
+Time taken for inference per run is 262.675 ms.
+Time taken for inference per run is 262.655 ms.
+Time taken for inference per run is 262.635 ms.
+Time taken for inference per run is 262.669 ms.
+Time taken for inference per run is 262.675 ms.
+Time taken for inference per run is 262.683 ms.
+Time taken for inference per run is 262.64 ms.
+Time taken for inference per run is 262.641 ms.
+Average time spent per iteration is 262.653 ms.
+Time taken for inference is 262.641 ms.
+ KeepCount 100
+
+real	12m4.703s
+user	0m38.064s
+sys	1m50.932s
++ timeout 2s tegrastats
+RAM 867/3965MB (lfb 476x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@35.5C CPU@38C iwlwifi@37C PMIC@100C GPU@37.5C AO@43C thermal@37.5C POM_5V_IN 1661/1661 POM_5V_GPU 0/0 POM_5V_CPU 166/166
++ sleep 60
++ for i in {1..3}
++ timeout 2s tegrastats
+RAM 867/3965MB (lfb 476x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@35C CPU@37.5C iwlwifi@37C PMIC@100C GPU@37C AO@42.5C thermal@37.5C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 166/166
++ sudo ./sample_uff_ssd_rect
+../data/ssd/sample_unpruned_mobilenet_v2.uff
+Registering UFF model
+Registered Input
+Registered output NMS
+Creating engine
+Begin parsing model...
+End parsing model...
+Begin building engine...
+Time lapsed to create an engine: 452649ms
+End building engine...
+Created engine
+ Num batches  1
+ Data Size  270000
+*** deserializing
+3 Binding
+Allocating buffer sizes for binding index: 0 of size : 270000 * 4 B
+Allocating buffer sizes for binding index: 1 of size : 700 * 4 B
+Allocating buffer sizes for binding index: 2 of size : 1 * 4 B
+Time taken for inference per run is 262.306 ms.
+Time taken for inference per run is 262.297 ms.
+Time taken for inference per run is 262.168 ms.
+Time taken for inference per run is 262.317 ms.
+Time taken for inference per run is 262.251 ms.
+Time taken for inference per run is 262.319 ms.
+Time taken for inference per run is 262.254 ms.
+Time taken for inference per run is 262.39 ms.
+Time taken for inference per run is 262.402 ms.
+Time taken for inference per run is 262.25 ms.
+Average time spent per iteration is 262.295 ms.
+Time taken for inference is 262.25 ms.
+ KeepCount 100
+
+real	11m57.473s
+user	0m38.608s
+sys	1m50.748s
++ timeout 2s tegrastats
+RAM 868/3965MB (lfb 468x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@35.5C CPU@38.5C iwlwifi@37C PMIC@100C GPU@37.5C AO@43.5C thermal@38.25C POM_5V_IN 1661/1661 POM_5V_GPU 0/0 POM_5V_CPU 166/166
++ sleep 60
++ for i in {1..3}
++ timeout 2s tegrastats
+RAM 868/3965MB (lfb 468x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@35C CPU@38C iwlwifi@37C PMIC@100C GPU@37C AO@42.5C thermal@37.5C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 166/166
++ sudo ./sample_uff_ssd_rect
+../data/ssd/sample_unpruned_mobilenet_v2.uff
+Registering UFF model
+Registered Input
+Registered output NMS
+Creating engine
+Begin parsing model...
+End parsing model...
+Begin building engine...
+Time lapsed to create an engine: 453221ms
+End building engine...
+Created engine
+ Num batches  1
+ Data Size  270000
+*** deserializing
+3 Binding
+Allocating buffer sizes for binding index: 0 of size : 270000 * 4 B
+Allocating buffer sizes for binding index: 1 of size : 700 * 4 B
+Allocating buffer sizes for binding index: 2 of size : 1 * 4 B
+Time taken for inference per run is 261.393 ms.
+Time taken for inference per run is 261.392 ms.
+Time taken for inference per run is 261.461 ms.
+Time taken for inference per run is 261.391 ms.
+Time taken for inference per run is 261.425 ms.
+Time taken for inference per run is 261.356 ms.
+Time taken for inference per run is 261.326 ms.
+Time taken for inference per run is 261.251 ms.
+Time taken for inference per run is 261.377 ms.
+Time taken for inference per run is 261.191 ms.
+Average time spent per iteration is 261.356 ms.
+Time taken for inference is 261.191 ms.
+ KeepCount 100
+
+real	11m57.045s
+user	0m38.540s
+sys	1m51.016s
++ timeout 2s tegrastats
+RAM 869/3965MB (lfb 461x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@35.5C CPU@38.5C iwlwifi@37C PMIC@100C GPU@37.5C AO@43.5C thermal@38C POM_5V_IN 1661/1661 POM_5V_GPU 0/0 POM_5V_CPU 166/166
++ sleep 60
++ sudo reboot now
+Connection to jetsonnano.local closed by remote host.
+Thu Jul  4 01:15:25 CEST 2019
++ for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
++ echo performance
++ sudo tee -a /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+performance
++ for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
++ echo performance
++ sudo tee -a /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor
+performance
++ for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
++ echo performance
++ sudo tee -a /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor
+performance
++ for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
++ echo performance
++ sudo tee -a /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
+performance
++ echo performance
++ sudo tee -a /sys/devices/57000000.gpu/devfreq/57000000.gpu/governor
+performance
++ cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
+performance
+performance
+performance
+performance
++ cat /sys/devices/57000000.gpu/devfreq/57000000.gpu/governor
+performance
++ cd /usr/src/tensorrt/bin
++ for i in {1..3}
++ timeout 2s tegrastats
+RAM 422/3965MB (lfb 811x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@33.5C CPU@36.5C iwlwifi@37C PMIC@100C GPU@36C AO@40.5C thermal@36.25C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 124/124
++ sudo ./sample_uff_ssd_rect
+../data/ssd/sample_unpruned_mobilenet_v2.uff
+Registering UFF model
+Registered Input
+Registered output NMS
+Creating engine
+Begin parsing model...
+End parsing model...
+Begin building engine...
+Time lapsed to create an engine: 457293ms
+End building engine...
+Created engine
+ Num batches  1
+ Data Size  270000
+*** deserializing
+3 Binding
+Allocating buffer sizes for binding index: 0 of size : 270000 * 4 B
+Allocating buffer sizes for binding index: 1 of size : 700 * 4 B
+Allocating buffer sizes for binding index: 2 of size : 1 * 4 B
+Time taken for inference per run is 261.385 ms.
+Time taken for inference per run is 261.401 ms.
+Time taken for inference per run is 261.405 ms.
+Time taken for inference per run is 261.443 ms.
+Time taken for inference per run is 261.379 ms.
+Time taken for inference per run is 261.493 ms.
+Time taken for inference per run is 261.371 ms.
+Time taken for inference per run is 261.557 ms.
+Time taken for inference per run is 261.471 ms.
+Time taken for inference per run is 261.51 ms.
+Average time spent per iteration is 261.441 ms.
+Time taken for inference is 261.51 ms.
+ KeepCount 100
+
+real	12m3.234s
+user	0m38.240s
+sys	1m51.112s
++ timeout 2s tegrastats
+RAM 867/3965MB (lfb 479x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@35.5C CPU@38C iwlwifi@37C PMIC@100C GPU@37.5C AO@43C thermal@37.25C POM_5V_IN 1661/1661 POM_5V_GPU 0/0 POM_5V_CPU 124/124
++ sleep 60
++ for i in {1..3}
++ timeout 2s tegrastats
+RAM 867/3965MB (lfb 479x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@34.5C CPU@37.5C iwlwifi@37C PMIC@100C GPU@36.5C AO@42C thermal@37.5C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 166/166
++ sudo ./sample_uff_ssd_rect
+../data/ssd/sample_unpruned_mobilenet_v2.uff
+Registering UFF model
+Registered Input
+Registered output NMS
+Creating engine
+Begin parsing model...
+End parsing model...
+Begin building engine...
+Time lapsed to create an engine: 452779ms
+End building engine...
+Created engine
+ Num batches  1
+ Data Size  270000
+*** deserializing
+3 Binding
+Allocating buffer sizes for binding index: 0 of size : 270000 * 4 B
+Allocating buffer sizes for binding index: 1 of size : 700 * 4 B
+Allocating buffer sizes for binding index: 2 of size : 1 * 4 B
+Time taken for inference per run is 262.646 ms.
+Time taken for inference per run is 262.663 ms.
+Time taken for inference per run is 262.665 ms.
+Time taken for inference per run is 262.683 ms.
+Time taken for inference per run is 262.683 ms.
+Time taken for inference per run is 262.695 ms.
+Time taken for inference per run is 262.686 ms.
+Time taken for inference per run is 262.698 ms.
+Time taken for inference per run is 262.695 ms.
+Time taken for inference per run is 262.692 ms.
+Average time spent per iteration is 262.681 ms.
+Time taken for inference is 262.692 ms.
+ KeepCount 100
+
+real	11m57.979s
+user	0m38.612s
+sys	1m50.832s
++ timeout 2s tegrastats
+RAM 869/3965MB (lfb 467x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@35.5C CPU@38.5C iwlwifi@37C PMIC@100C GPU@37.5C AO@43C thermal@38C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 166/166
++ sleep 60
++ for i in {1..3}
++ timeout 2s tegrastats
+RAM 869/3965MB (lfb 467x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@35C CPU@37.5C iwlwifi@37C PMIC@100C GPU@37C AO@42C thermal@37.5C POM_5V_IN 1661/1661 POM_5V_GPU 0/0 POM_5V_CPU 166/166
++ sudo ./sample_uff_ssd_rect
+../data/ssd/sample_unpruned_mobilenet_v2.uff
+Registering UFF model
+Registered Input
+Registered output NMS
+Creating engine
+Begin parsing model...
+End parsing model...
+Begin building engine...
+Time lapsed to create an engine: 453794ms
+End building engine...
+Created engine
+ Num batches  1
+ Data Size  270000
+*** deserializing
+3 Binding
+Allocating buffer sizes for binding index: 0 of size : 270000 * 4 B
+Allocating buffer sizes for binding index: 1 of size : 700 * 4 B
+Allocating buffer sizes for binding index: 2 of size : 1 * 4 B
+Time taken for inference per run is 262.553 ms.
+Time taken for inference per run is 262.506 ms.
+Time taken for inference per run is 262.631 ms.
+Time taken for inference per run is 262.592 ms.
+Time taken for inference per run is 262.526 ms.
+Time taken for inference per run is 262.535 ms.
+Time taken for inference per run is 262.545 ms.
+Time taken for inference per run is 262.576 ms.
+Time taken for inference per run is 262.464 ms.
+Time taken for inference per run is 262.562 ms.
+Average time spent per iteration is 262.549 ms.
+Time taken for inference is 262.562 ms.
+ KeepCount 100
+
+real	11m58.875s
+user	0m38.440s
+sys	1m50.792s
++ timeout 2s tegrastats
+RAM 871/3965MB (lfb 465x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@35.5C CPU@38.5C iwlwifi@37C PMIC@100C GPU@37.5C AO@43.5C thermal@38C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 124/124
++ sleep 60
++ sudo reboot now
+Connection to jetsonnano.local closed by remote host.
+Thu Jul  4 01:56:38 CEST 2019
++ for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
++ echo performance
++ sudo tee -a /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+performance
++ for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
++ echo performance
++ sudo tee -a /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor
+performance
++ for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
++ echo performance
++ sudo tee -a /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor
+performance
++ for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
++ echo performance
++ sudo tee -a /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
+performance
++ echo performance
++ sudo tee -a /sys/devices/57000000.gpu/devfreq/57000000.gpu/governor
+performance
++ cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
+performance
+performance
+performance
+performance
++ cat /sys/devices/57000000.gpu/devfreq/57000000.gpu/governor
+performance
++ cd /usr/src/tensorrt/bin
++ for i in {1..3}
++ timeout 2s tegrastats
+RAM 419/3965MB (lfb 812x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@33.5C CPU@36.5C iwlwifi@37C PMIC@100C GPU@36.5C AO@41C thermal@36.5C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 166/166
++ sudo ./sample_uff_ssd_rect
+../data/ssd/sample_unpruned_mobilenet_v2.uff
+Registering UFF model
+Registered Input
+Registered output NMS
+Creating engine
+Begin parsing model...
+End parsing model...
+Begin building engine...
+Time lapsed to create an engine: 457695ms
+End building engine...
+Created engine
+ Num batches  1
+ Data Size  270000
+*** deserializing
+3 Binding
+Allocating buffer sizes for binding index: 0 of size : 270000 * 4 B
+Allocating buffer sizes for binding index: 1 of size : 700 * 4 B
+Allocating buffer sizes for binding index: 2 of size : 1 * 4 B
+Time taken for inference per run is 261.593 ms.
+Time taken for inference per run is 261.529 ms.
+Time taken for inference per run is 261.521 ms.
+Time taken for inference per run is 261.51 ms.
+Time taken for inference per run is 261.513 ms.
+Time taken for inference per run is 261.592 ms.
+Time taken for inference per run is 261.507 ms.
+Time taken for inference per run is 261.656 ms.
+Time taken for inference per run is 261.686 ms.
+Time taken for inference per run is 261.517 ms.
+Average time spent per iteration is 261.562 ms.
+Time taken for inference is 261.517 ms.
+ KeepCount 100
+
+real	12m3.784s
+user	0m39.328s
+sys	1m50.188s
++ timeout 2s tegrastats
+RAM 864/3965MB (lfb 477x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@36C CPU@38.5C iwlwifi@37C PMIC@100C GPU@38C AO@43C thermal@38C POM_5V_IN 1661/1661 POM_5V_GPU 0/0 POM_5V_CPU 166/166
++ sleep 60
++ for i in {1..3}
++ timeout 2s tegrastats
+RAM 866/3965MB (lfb 477x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@34.5C CPU@37.5C iwlwifi@37C PMIC@100C GPU@36.5C AO@42.5C thermal@37.25C POM_5V_IN 1661/1661 POM_5V_GPU 0/0 POM_5V_CPU 166/166
++ sudo ./sample_uff_ssd_rect
+../data/ssd/sample_unpruned_mobilenet_v2.uff
+Registering UFF model
+Registered Input
+Registered output NMS
+Creating engine
+Begin parsing model...
+End parsing model...
+Begin building engine...
+Time lapsed to create an engine: 453756ms
+End building engine...
+Created engine
+ Num batches  1
+ Data Size  270000
+*** deserializing
+3 Binding
+Allocating buffer sizes for binding index: 0 of size : 270000 * 4 B
+Allocating buffer sizes for binding index: 1 of size : 700 * 4 B
+Allocating buffer sizes for binding index: 2 of size : 1 * 4 B
+Time taken for inference per run is 262.503 ms.
+Time taken for inference per run is 262.523 ms.
+Time taken for inference per run is 262.403 ms.
+Time taken for inference per run is 262.339 ms.
+Time taken for inference per run is 262.513 ms.
+Time taken for inference per run is 262.48 ms.
+Time taken for inference per run is 262.485 ms.
+Time taken for inference per run is 262.384 ms.
+Time taken for inference per run is 262.488 ms.
+Time taken for inference per run is 262.474 ms.
+Average time spent per iteration is 262.459 ms.
+Time taken for inference is 262.474 ms.
+ KeepCount 100
+
+real	11m58.742s
+user	0m38.556s
+sys	1m50.740s
++ timeout 2s tegrastats
+RAM 866/3965MB (lfb 467x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@36C CPU@38.5C iwlwifi@37C PMIC@100C GPU@38C AO@43C thermal@38C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 166/166
++ sleep 60
++ for i in {1..3}
++ timeout 2s tegrastats
+RAM 866/3965MB (lfb 467x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@35C CPU@37.5C iwlwifi@37C PMIC@100C GPU@37C AO@42.5C thermal@37.25C POM_5V_IN 1661/1661 POM_5V_GPU 0/0 POM_5V_CPU 124/124
++ sudo ./sample_uff_ssd_rect
+../data/ssd/sample_unpruned_mobilenet_v2.uff
+Registering UFF model
+Registered Input
+Registered output NMS
+Creating engine
+Begin parsing model...
+End parsing model...
+Begin building engine...
+Time lapsed to create an engine: 453885ms
+End building engine...
+Created engine
+ Num batches  1
+ Data Size  270000
+*** deserializing
+3 Binding
+Allocating buffer sizes for binding index: 0 of size : 270000 * 4 B
+Allocating buffer sizes for binding index: 1 of size : 700 * 4 B
+Allocating buffer sizes for binding index: 2 of size : 1 * 4 B
+Time taken for inference per run is 261.936 ms.
+Time taken for inference per run is 261.928 ms.
+Time taken for inference per run is 261.935 ms.
+Time taken for inference per run is 261.976 ms.
+Time taken for inference per run is 261.79 ms.
+Time taken for inference per run is 261.918 ms.
+Time taken for inference per run is 261.908 ms.
+Time taken for inference per run is 262.025 ms.
+Time taken for inference per run is 261.828 ms.
+Time taken for inference per run is 262.055 ms.
+Average time spent per iteration is 261.93 ms.
+Time taken for inference is 262.055 ms.
+ KeepCount 100
+
+real	11m58.311s
+user	0m38.136s
+sys	1m51.028s
++ timeout 2s tegrastats
+RAM 867/3965MB (lfb 465x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@33.5C CPU@36.5C iwlwifi@35C PMIC@100C GPU@35.5C AO@41C thermal@35.25C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 124/124
++ sleep 60
++ sudo reboot now
+Connection to jetsonnano.local closed by remote host.
+Thu Jul  4 02:37:52 CEST 2019
++ for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
++ echo performance
++ sudo tee -a /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+performance
++ for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
++ echo performance
++ sudo tee -a /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor
+performance
++ for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
++ echo performance
++ sudo tee -a /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor
+performance
++ for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
++ echo performance
++ sudo tee -a /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
+performance
++ echo performance
++ sudo tee -a /sys/devices/57000000.gpu/devfreq/57000000.gpu/governor
+performance
++ cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
+performance
+performance
+performance
+performance
++ cat /sys/devices/57000000.gpu/devfreq/57000000.gpu/governor
+performance
++ cd /usr/src/tensorrt/bin
++ for i in {1..3}
++ timeout 2s tegrastats
+RAM 424/3965MB (lfb 816x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@31.5C CPU@34.5C iwlwifi@35C PMIC@100C GPU@34C AO@39C thermal@34.5C POM_5V_IN 1622/1622 POM_5V_GPU 0/0 POM_5V_CPU 166/166
++ sudo ./sample_uff_ssd_rect
+../data/ssd/sample_unpruned_mobilenet_v2.uff
+Registering UFF model
+Registered Input
+Registered output NMS
+Creating engine
+Begin parsing model...
+End parsing model...
+Begin building engine...
+Time lapsed to create an engine: 456342ms
+End building engine...
+Created engine
+ Num batches  1
+ Data Size  270000
+*** deserializing
+3 Binding
+Allocating buffer sizes for binding index: 0 of size : 270000 * 4 B
+Allocating buffer sizes for binding index: 1 of size : 700 * 4 B
+Allocating buffer sizes for binding index: 2 of size : 1 * 4 B
+Time taken for inference per run is 262.108 ms.
+Time taken for inference per run is 262.062 ms.
+Time taken for inference per run is 262.1 ms.
+Time taken for inference per run is 261.86 ms.
+Time taken for inference per run is 261.992 ms.
+Time taken for inference per run is 261.886 ms.
+Time taken for inference per run is 262.168 ms.
+Time taken for inference per run is 261.926 ms.
+Time taken for inference per run is 262.131 ms.
+Time taken for inference per run is 262.003 ms.
+Average time spent per iteration is 262.024 ms.
+Time taken for inference is 262.003 ms.
+ KeepCount 100
+
+real	12m2.897s
+user	0m38.228s
+sys	1m50.964s
++ timeout 2s tegrastats
+RAM 871/3965MB (lfb 473x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@33.5C CPU@36C iwlwifi@35C PMIC@100C GPU@35.5C AO@40.5C thermal@35.75C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 124/124
++ sleep 60
++ for i in {1..3}
++ timeout 2s tegrastats
+RAM 871/3965MB (lfb 472x4MB) CPU [1%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@32.5C CPU@35.5C iwlwifi@35C PMIC@100C GPU@34.5C AO@40C thermal@35.25C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 124/124
++ sudo ./sample_uff_ssd_rect
+../data/ssd/sample_unpruned_mobilenet_v2.uff
+Registering UFF model
+Registered Input
+Registered output NMS
+Creating engine
+Begin parsing model...
+End parsing model...
+Begin building engine...
+Time lapsed to create an engine: 454652ms
+End building engine...
+Created engine
+ Num batches  1
+ Data Size  270000
+*** deserializing
+3 Binding
+Allocating buffer sizes for binding index: 0 of size : 270000 * 4 B
+Allocating buffer sizes for binding index: 1 of size : 700 * 4 B
+Allocating buffer sizes for binding index: 2 of size : 1 * 4 B
+Time taken for inference per run is 262.437 ms.
+Time taken for inference per run is 262.377 ms.
+Time taken for inference per run is 262.406 ms.
+Time taken for inference per run is 262.501 ms.
+Time taken for inference per run is 262.362 ms.
+Time taken for inference per run is 262.215 ms.
+Time taken for inference per run is 262.345 ms.
+Time taken for inference per run is 262.442 ms.
+Time taken for inference per run is 262.503 ms.
+Time taken for inference per run is 262.239 ms.
+Average time spent per iteration is 262.383 ms.
+Time taken for inference is 262.239 ms.
+ KeepCount 100
+RAM 873/3965MB (lfb 469x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@33.5C CPU@36.5C iwlwifi@35C PMIC@100C GPU@35.5C AO@41C thermal@36C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 124/124
+
+real	11m59.580s
+user	0m38.640s
+sys	1m50.996s
++ timeout 2s tegrastats
++ sleep 60
++ for i in {1..3}
++ timeout 2s tegrastats
+RAM 873/3965MB (lfb 469x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@33C CPU@36C iwlwifi@35C PMIC@100C GPU@34.5C AO@39.5C thermal@35.5C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 124/124
++ sudo ./sample_uff_ssd_rect
+../data/ssd/sample_unpruned_mobilenet_v2.uff
+Registering UFF model
+Registered Input
+Registered output NMS
+Creating engine
+Begin parsing model...
+End parsing model...
+Begin building engine...
+Time lapsed to create an engine: 454172ms
+End building engine...
+Created engine
+ Num batches  1
+ Data Size  270000
+*** deserializing
+3 Binding
+Allocating buffer sizes for binding index: 0 of size : 270000 * 4 B
+Allocating buffer sizes for binding index: 1 of size : 700 * 4 B
+Allocating buffer sizes for binding index: 2 of size : 1 * 4 B
+Time taken for inference per run is 261.938 ms.
+Time taken for inference per run is 261.932 ms.
+Time taken for inference per run is 261.917 ms.
+Time taken for inference per run is 261.947 ms.
+Time taken for inference per run is 261.901 ms.
+Time taken for inference per run is 261.993 ms.
+Time taken for inference per run is 261.942 ms.
+Time taken for inference per run is 262.002 ms.
+Time taken for inference per run is 261.863 ms.
+Time taken for inference per run is 262.003 ms.
+Average time spent per iteration is 261.944 ms.
+Time taken for inference is 262.003 ms.
+ KeepCount 100
+
+real	11m58.649s
+user	0m39.004s
+sys	1m50.632s
++ timeout 2s tegrastats
+RAM 872/3965MB (lfb 460x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@33.5C CPU@36.5C iwlwifi@35C PMIC@100C GPU@35.5C AO@40.5C thermal@35.25C POM_5V_IN 1622/1622 POM_5V_GPU 0/0 POM_5V_CPU 166/166
++ sleep 60
++ sudo reboot now
+Connection to jetsonnano.local closed by remote host.
+Thu Jul  4 03:19:07 CEST 2019
++ for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
++ echo performance
++ sudo tee -a /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+performance
++ for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
++ echo performance
++ sudo tee -a /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor
+performance
++ for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
++ echo performance
++ sudo tee -a /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor
+performance
++ for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
++ echo performance
++ sudo tee -a /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
+performance
++ echo performance
++ sudo tee -a /sys/devices/57000000.gpu/devfreq/57000000.gpu/governor
+performance
++ cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
+performance
+performance
+performance
+performance
++ cat /sys/devices/57000000.gpu/devfreq/57000000.gpu/governor
+performance
++ cd /usr/src/tensorrt/bin
++ for i in {1..3}
++ timeout 2s tegrastats
+RAM 420/3965MB (lfb 811x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@31.5C CPU@34.5C iwlwifi@35C PMIC@100C GPU@34.5C AO@38.5C thermal@34.5C POM_5V_IN 1622/1622 POM_5V_GPU 0/0 POM_5V_CPU 166/166
++ sudo ./sample_uff_ssd_rect
+../data/ssd/sample_unpruned_mobilenet_v2.uff
+Registering UFF model
+Registered Input
+Registered output NMS
+Creating engine
+Begin parsing model...
+End parsing model...
+Begin building engine...
+Time lapsed to create an engine: 458748ms
+End building engine...
+Created engine
+ Num batches  1
+ Data Size  270000
+*** deserializing
+3 Binding
+Allocating buffer sizes for binding index: 0 of size : 270000 * 4 B
+Allocating buffer sizes for binding index: 1 of size : 700 * 4 B
+Allocating buffer sizes for binding index: 2 of size : 1 * 4 B
+Time taken for inference per run is 262.437 ms.
+Time taken for inference per run is 262.401 ms.
+Time taken for inference per run is 262.297 ms.
+Time taken for inference per run is 262.391 ms.
+Time taken for inference per run is 262.442 ms.
+Time taken for inference per run is 262.459 ms.
+Time taken for inference per run is 262.267 ms.
+Time taken for inference per run is 262.454 ms.
+Time taken for inference per run is 262.406 ms.
+Time taken for inference per run is 262.438 ms.
+Average time spent per iteration is 262.399 ms.
+Time taken for inference is 262.438 ms.
+ KeepCount 100
+
+real	12m5.658s
+user	0m38.136s
+sys	1m51.712s
++ timeout 2s tegrastats
+RAM 864/3965MB (lfb 469x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@33.5C CPU@36.5C iwlwifi@35C PMIC@100C GPU@35.5C AO@40.5C thermal@36C POM_5V_IN 1622/1622 POM_5V_GPU 0/0 POM_5V_CPU 166/166
++ sleep 60
++ for i in {1..3}
++ timeout 2s tegrastats
+RAM 864/3965MB (lfb 469x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@33C CPU@35.5C iwlwifi@35C PMIC@100C GPU@35C AO@39.5C thermal@35.5C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 124/124
++ sudo ./sample_uff_ssd_rect
+../data/ssd/sample_unpruned_mobilenet_v2.uff
+Registering UFF model
+Registered Input
+Registered output NMS
+Creating engine
+Begin parsing model...
+End parsing model...
+Begin building engine...
+Time lapsed to create an engine: 454376ms
+End building engine...
+Created engine
+ Num batches  1
+ Data Size  270000
+*** deserializing
+3 Binding
+Allocating buffer sizes for binding index: 0 of size : 270000 * 4 B
+Allocating buffer sizes for binding index: 1 of size : 700 * 4 B
+Allocating buffer sizes for binding index: 2 of size : 1 * 4 B
+Time taken for inference per run is 262.576 ms.
+Time taken for inference per run is 262.616 ms.
+Time taken for inference per run is 262.543 ms.
+Time taken for inference per run is 262.548 ms.
+Time taken for inference per run is 262.534 ms.
+Time taken for inference per run is 262.563 ms.
+Time taken for inference per run is 262.511 ms.
+Time taken for inference per run is 262.626 ms.
+Time taken for inference per run is 262.455 ms.
+Time taken for inference per run is 262.579 ms.
+Average time spent per iteration is 262.555 ms.
+Time taken for inference is 262.579 ms.
+ KeepCount 100
+
+real	11m59.482s
+user	0m38.516s
+sys	1m50.524s
++ timeout 2s tegrastats
+RAM 867/3965MB (lfb 449x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@33C CPU@36.5C iwlwifi@35C PMIC@100C GPU@35C AO@40.5C thermal@35.75C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 124/124
++ sleep 60
++ for i in {1..3}
++ timeout 2s tegrastats
+RAM 866/3965MB (lfb 449x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@32.5C CPU@35.5C iwlwifi@35C PMIC@100C GPU@34.5C AO@40C thermal@35C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 124/124
++ sudo ./sample_uff_ssd_rect
+../data/ssd/sample_unpruned_mobilenet_v2.uff
+Registering UFF model
+Registered Input
+Registered output NMS
+Creating engine
+Begin parsing model...
+End parsing model...
+Begin building engine...
+Time lapsed to create an engine: 453967ms
+End building engine...
+Created engine
+ Num batches  1
+ Data Size  270000
+*** deserializing
+3 Binding
+Allocating buffer sizes for binding index: 0 of size : 270000 * 4 B
+Allocating buffer sizes for binding index: 1 of size : 700 * 4 B
+Allocating buffer sizes for binding index: 2 of size : 1 * 4 B
+Time taken for inference per run is 262.578 ms.
+Time taken for inference per run is 262.507 ms.
+Time taken for inference per run is 262.604 ms.
+Time taken for inference per run is 262.588 ms.
+Time taken for inference per run is 262.58 ms.
+Time taken for inference per run is 262.603 ms.
+Time taken for inference per run is 262.517 ms.
+Time taken for inference per run is 262.554 ms.
+Time taken for inference per run is 262.512 ms.
+Time taken for inference per run is 262.639 ms.
+Average time spent per iteration is 262.568 ms.
+Time taken for inference is 262.639 ms.
+ KeepCount 100
+
+real	11m59.081s
+user	0m37.948s
+sys	1m51.144s
++ timeout 2s tegrastats
+RAM 868/3965MB (lfb 445x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@33C CPU@36C iwlwifi@35C PMIC@100C GPU@35C AO@40.5C thermal@34.75C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 124/124
++ sleep 60
++ sudo reboot now
+Connection to jetsonnano.local closed by remote host.
+Thu Jul  4 04:00:24 CEST 2019
++ for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
++ echo performance
++ sudo tee -a /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+performance
++ for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
++ echo performance
++ sudo tee -a /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor
+performance
++ for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
++ echo performance
++ sudo tee -a /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor
+performance
++ for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
++ echo performance
++ sudo tee -a /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
+performance
++ echo performance
++ sudo tee -a /sys/devices/57000000.gpu/devfreq/57000000.gpu/governor
+performance
++ cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
+performance
+performance
+performance
+performance
++ cat /sys/devices/57000000.gpu/devfreq/57000000.gpu/governor
+performance
++ cd /usr/src/tensorrt/bin
++ for i in {1..3}
++ timeout 2s tegrastats
+RAM 421/3965MB (lfb 810x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@31C CPU@34.5C iwlwifi@35C PMIC@100C GPU@34C AO@38.5C thermal@34.25C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 124/124
++ sudo ./sample_uff_ssd_rect
+../data/ssd/sample_unpruned_mobilenet_v2.uff
+Registering UFF model
+Registered Input
+Registered output NMS
+Creating engine
+Begin parsing model...
+End parsing model...
+Begin building engine...
+Time lapsed to create an engine: 457531ms
+End building engine...
+Created engine
+ Num batches  1
+ Data Size  270000
+*** deserializing
+3 Binding
+Allocating buffer sizes for binding index: 0 of size : 270000 * 4 B
+Allocating buffer sizes for binding index: 1 of size : 700 * 4 B
+Allocating buffer sizes for binding index: 2 of size : 1 * 4 B
+Time taken for inference per run is 262.524 ms.
+Time taken for inference per run is 262.52 ms.
+Time taken for inference per run is 262.482 ms.
+Time taken for inference per run is 262.487 ms.
+Time taken for inference per run is 262.48 ms.
+Time taken for inference per run is 262.521 ms.
+Time taken for inference per run is 262.412 ms.
+Time taken for inference per run is 262.418 ms.
+Time taken for inference per run is 262.397 ms.
+Time taken for inference per run is 262.483 ms.
+Average time spent per iteration is 262.472 ms.
+Time taken for inference is 262.483 ms.
+ KeepCount 100
+
+real	12m4.493s
+user	0m38.252s
+sys	1m50.684s
++ timeout 2s tegrastats
+RAM 866/3965MB (lfb 484x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@33C CPU@36.5C iwlwifi@35C PMIC@100C GPU@35C AO@40.5C thermal@35C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 124/124
++ sleep 60
++ for i in {1..3}
++ timeout 2s tegrastats
+RAM 866/3965MB (lfb 484x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@32C CPU@35.5C iwlwifi@35C PMIC@100C GPU@34C AO@39.5C thermal@35C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 124/124
++ sudo ./sample_uff_ssd_rect
+../data/ssd/sample_unpruned_mobilenet_v2.uff
+Registering UFF model
+Registered Input
+Registered output NMS
+Creating engine
+Begin parsing model...
+End parsing model...
+Begin building engine...
+Time lapsed to create an engine: 453457ms
+End building engine...
+Created engine
+ Num batches  1
+ Data Size  270000
+*** deserializing
+3 Binding
+Allocating buffer sizes for binding index: 0 of size : 270000 * 4 B
+Allocating buffer sizes for binding index: 1 of size : 700 * 4 B
+Allocating buffer sizes for binding index: 2 of size : 1 * 4 B
+Time taken for inference per run is 262.293 ms.
+Time taken for inference per run is 262.387 ms.
+Time taken for inference per run is 262.293 ms.
+Time taken for inference per run is 262.297 ms.
+Time taken for inference per run is 262.259 ms.
+Time taken for inference per run is 262.412 ms.
+Time taken for inference per run is 262.216 ms.
+Time taken for inference per run is 262.298 ms.
+Time taken for inference per run is 262.193 ms.
+Time taken for inference per run is 262.176 ms.
+Average time spent per iteration is 262.283 ms.
+Time taken for inference is 262.176 ms.
+ KeepCount 100
+
+real	11m58.274s
+user	0m38.892s
+sys	1m50.412s
++ timeout 2s tegrastats
+RAM 868/3965MB (lfb 475x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@33C CPU@36C iwlwifi@35C PMIC@100C GPU@35C AO@40.5C thermal@35.5C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 166/166
++ sleep 60
++ for i in {1..3}
++ timeout 2s tegrastats
+RAM 868/3965MB (lfb 474x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@32.5C CPU@35.5C iwlwifi@35C PMIC@100C GPU@34.5C AO@39.5C thermal@35.25C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 166/166
++ sudo ./sample_uff_ssd_rect
+../data/ssd/sample_unpruned_mobilenet_v2.uff
+Registering UFF model
+Registered Input
+Registered output NMS
+Creating engine
+Begin parsing model...
+End parsing model...
+Begin building engine...
+Time lapsed to create an engine: 452904ms
+End building engine...
+Created engine
+ Num batches  1
+ Data Size  270000
+*** deserializing
+3 Binding
+Allocating buffer sizes for binding index: 0 of size : 270000 * 4 B
+Allocating buffer sizes for binding index: 1 of size : 700 * 4 B
+Allocating buffer sizes for binding index: 2 of size : 1 * 4 B
+Time taken for inference per run is 262.02 ms.
+Time taken for inference per run is 262.032 ms.
+Time taken for inference per run is 261.969 ms.
+Time taken for inference per run is 262.057 ms.
+Time taken for inference per run is 261.918 ms.
+Time taken for inference per run is 261.997 ms.
+Time taken for inference per run is 261.948 ms.
+Time taken for inference per run is 262.079 ms.
+Time taken for inference per run is 261.951 ms.
+Time taken for inference per run is 261.893 ms.
+Average time spent per iteration is 261.986 ms.
+Time taken for inference is 261.893 ms.
+ KeepCount 100
+
+real	11m57.431s
+user	0m37.888s
+sys	1m51.592s
++ timeout 2s tegrastats
+RAM 870/3965MB (lfb 469x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@33C CPU@36C iwlwifi@35C PMIC@100C GPU@35C AO@40.5C thermal@35C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 166/166
++ sleep 60
++ sudo reboot now
+Connection to jetsonnano.local closed by remote host.
+Thu Jul  4 04:41:38 CEST 2019
++ for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
++ echo performance
++ sudo tee -a /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+performance
++ for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
++ echo performance
++ sudo tee -a /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor
+performance
++ for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
++ echo performance
++ sudo tee -a /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor
+performance
++ for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
++ echo performance
++ sudo tee -a /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
+performance
++ echo performance
++ sudo tee -a /sys/devices/57000000.gpu/devfreq/57000000.gpu/governor
+performance
++ cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
+performance
+performance
+performance
+performance
++ cat /sys/devices/57000000.gpu/devfreq/57000000.gpu/governor
+performance
++ cd /usr/src/tensorrt/bin
++ for i in {1..3}
++ timeout 2s tegrastats
+RAM 420/3965MB (lfb 811x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@31C CPU@34C iwlwifi@35C PMIC@100C GPU@33.5C AO@38C thermal@33.75C POM_5V_IN 1622/1622 POM_5V_GPU 0/0 POM_5V_CPU 124/124
++ sudo ./sample_uff_ssd_rect
+../data/ssd/sample_unpruned_mobilenet_v2.uff
+Registering UFF model
+Registered Input
+Registered output NMS
+Creating engine
+Begin parsing model...
+End parsing model...
+Begin building engine...
+Time lapsed to create an engine: 456722ms
+End building engine...
+Created engine
+ Num batches  1
+ Data Size  270000
+*** deserializing
+3 Binding
+Allocating buffer sizes for binding index: 0 of size : 270000 * 4 B
+Allocating buffer sizes for binding index: 1 of size : 700 * 4 B
+Allocating buffer sizes for binding index: 2 of size : 1 * 4 B
+Time taken for inference per run is 262.517 ms.
+Time taken for inference per run is 262.613 ms.
+Time taken for inference per run is 262.619 ms.
+Time taken for inference per run is 262.607 ms.
+Time taken for inference per run is 262.584 ms.
+Time taken for inference per run is 262.596 ms.
+Time taken for inference per run is 262.651 ms.
+Time taken for inference per run is 262.635 ms.
+Time taken for inference per run is 262.66 ms.
+Time taken for inference per run is 262.665 ms.
+Average time spent per iteration is 262.615 ms.
+Time taken for inference is 262.665 ms.
+ KeepCount 100
+
+real	12m3.884s
+user	0m37.896s
+sys	1m51.272s
++ timeout 2s tegrastats
+RAM 868/3965MB (lfb 475x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@33C CPU@36C iwlwifi@35C PMIC@100C GPU@35C AO@40.5C thermal@35.5C POM_5V_IN 1622/1622 POM_5V_GPU 0/0 POM_5V_CPU 166/166
++ sleep 60
++ for i in {1..3}
++ timeout 2s tegrastats
+RAM 867/3965MB (lfb 475x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@32.5C CPU@36C iwlwifi@35C PMIC@100C GPU@34.5C AO@40C thermal@35.25C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 124/124
++ sudo ./sample_uff_ssd_rect
+../data/ssd/sample_unpruned_mobilenet_v2.uff
+Registering UFF model
+Registered Input
+Registered output NMS
+Creating engine
+Begin parsing model...
+End parsing model...
+Begin building engine...
+Time lapsed to create an engine: 453597ms
+End building engine...
+Created engine
+ Num batches  1
+ Data Size  270000
+*** deserializing
+3 Binding
+Allocating buffer sizes for binding index: 0 of size : 270000 * 4 B
+Allocating buffer sizes for binding index: 1 of size : 700 * 4 B
+Allocating buffer sizes for binding index: 2 of size : 1 * 4 B
+Time taken for inference per run is 262.674 ms.
+Time taken for inference per run is 262.64 ms.
+Time taken for inference per run is 262.624 ms.
+Time taken for inference per run is 262.651 ms.
+Time taken for inference per run is 262.636 ms.
+Time taken for inference per run is 262.628 ms.
+Time taken for inference per run is 262.643 ms.
+Time taken for inference per run is 262.703 ms.
+Time taken for inference per run is 262.704 ms.
+Time taken for inference per run is 262.636 ms.
+Average time spent per iteration is 262.654 ms.
+Time taken for inference is 262.636 ms.
+ KeepCount 100
+
+real	11m58.788s
+user	0m38.664s
+sys	1m50.464s
++ timeout 2s tegrastats
+RAM 869/3965MB (lfb 469x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@33.5C CPU@36C iwlwifi@35C PMIC@100C GPU@35.5C AO@40.5C thermal@35.75C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 124/124
++ sleep 60
++ for i in {1..3}
++ timeout 2s tegrastats
+RAM 869/3965MB (lfb 470x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@32.5C CPU@35.5C iwlwifi@35C PMIC@100C GPU@34.5C AO@39.5C thermal@35.25C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 166/166
++ sudo ./sample_uff_ssd_rect
+../data/ssd/sample_unpruned_mobilenet_v2.uff
+Registering UFF model
+Registered Input
+Registered output NMS
+Creating engine
+Begin parsing model...
+End parsing model...
+Begin building engine...
+Time lapsed to create an engine: 453410ms
+End building engine...
+Created engine
+ Num batches  1
+ Data Size  270000
+*** deserializing
+3 Binding
+Allocating buffer sizes for binding index: 0 of size : 270000 * 4 B
+Allocating buffer sizes for binding index: 1 of size : 700 * 4 B
+Allocating buffer sizes for binding index: 2 of size : 1 * 4 B
+Time taken for inference per run is 262.545 ms.
+Time taken for inference per run is 262.578 ms.
+Time taken for inference per run is 262.677 ms.
+Time taken for inference per run is 262.67 ms.
+Time taken for inference per run is 262.603 ms.
+Time taken for inference per run is 262.684 ms.
+Time taken for inference per run is 262.66 ms.
+Time taken for inference per run is 262.635 ms.
+Time taken for inference per run is 262.471 ms.
+Time taken for inference per run is 262.594 ms.
+Average time spent per iteration is 262.612 ms.
+Time taken for inference is 262.594 ms.
+ KeepCount 100
+
+real	11m58.515s
+user	0m38.940s
+sys	1m50.784s
++ timeout 2s tegrastats
+RAM 871/3965MB (lfb 464x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@33C CPU@36.5C iwlwifi@35C PMIC@100C GPU@35C AO@40.5C thermal@35.75C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 166/166
++ sleep 60
++ sudo reboot now
+Connection to jetsonnano.local closed by remote host.
+Thu Jul  4 05:22:52 CEST 2019
++ for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
++ echo performance
++ sudo tee -a /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+performance
++ for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
++ echo performance
++ sudo tee -a /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor
+performance
++ for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
++ echo performance
++ sudo tee -a /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor
+performance
++ for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
++ echo performance
++ sudo tee -a /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
+performance
++ echo performance
++ sudo tee -a /sys/devices/57000000.gpu/devfreq/57000000.gpu/governor
+performance
++ cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
+performance
+performance
+performance
+performance
++ cat /sys/devices/57000000.gpu/devfreq/57000000.gpu/governor
+performance
++ cd /usr/src/tensorrt/bin
++ for i in {1..3}
++ timeout 2s tegrastats
+RAM 421/3965MB (lfb 812x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@31C CPU@34.5C iwlwifi@35C PMIC@100C GPU@33.5C AO@38.5C thermal@34C POM_5V_IN 1622/1622 POM_5V_GPU 0/0 POM_5V_CPU 166/166
++ sudo ./sample_uff_ssd_rect
+../data/ssd/sample_unpruned_mobilenet_v2.uff
+Registering UFF model
+Registered Input
+Registered output NMS
+Creating engine
+Begin parsing model...
+End parsing model...
+Begin building engine...
+Time lapsed to create an engine: 456658ms
+End building engine...
+Created engine
+ Num batches  1
+ Data Size  270000
+*** deserializing
+3 Binding
+Allocating buffer sizes for binding index: 0 of size : 270000 * 4 B
+Allocating buffer sizes for binding index: 1 of size : 700 * 4 B
+Allocating buffer sizes for binding index: 2 of size : 1 * 4 B
+Time taken for inference per run is 262.138 ms.
+Time taken for inference per run is 262.193 ms.
+Time taken for inference per run is 262.187 ms.
+Time taken for inference per run is 262.219 ms.
+Time taken for inference per run is 262.235 ms.
+Time taken for inference per run is 262.014 ms.
+Time taken for inference per run is 262.205 ms.
+Time taken for inference per run is 262.173 ms.
+Time taken for inference per run is 262.202 ms.
+Time taken for inference per run is 262.22 ms.
+Average time spent per iteration is 262.179 ms.
+Time taken for inference is 262.22 ms.
+ KeepCount 100
+
+real	12m3.356s
+user	0m38.188s
+sys	1m51.100s
++ timeout 2s tegrastats
+RAM 867/3965MB (lfb 477x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@33.5C CPU@36C iwlwifi@35C PMIC@100C GPU@35.5C AO@40.5C thermal@35.75C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 124/124
++ sleep 60
++ for i in {1..3}
++ timeout 2s tegrastats
+RAM 866/3965MB (lfb 477x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@32.5C CPU@35.5C iwlwifi@35C PMIC@100C GPU@34.5C AO@39.5C thermal@35C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 166/166
++ sudo ./sample_uff_ssd_rect
+../data/ssd/sample_unpruned_mobilenet_v2.uff
+Registering UFF model
+Registered Input
+Registered output NMS
+Creating engine
+Begin parsing model...
+End parsing model...
+Begin building engine...
+Time lapsed to create an engine: 453670ms
+End building engine...
+Created engine
+ Num batches  1
+ Data Size  270000
+*** deserializing
+3 Binding
+Allocating buffer sizes for binding index: 0 of size : 270000 * 4 B
+Allocating buffer sizes for binding index: 1 of size : 700 * 4 B
+Allocating buffer sizes for binding index: 2 of size : 1 * 4 B
+Time taken for inference per run is 262.112 ms.
+Time taken for inference per run is 262.256 ms.
+Time taken for inference per run is 262.109 ms.
+Time taken for inference per run is 262.148 ms.
+Time taken for inference per run is 262.321 ms.
+Time taken for inference per run is 262.159 ms.
+Time taken for inference per run is 262.149 ms.
+Time taken for inference per run is 262.258 ms.
+Time taken for inference per run is 262.213 ms.
+Time taken for inference per run is 262.109 ms.
+Average time spent per iteration is 262.183 ms.
+Time taken for inference is 262.109 ms.
+ KeepCount 100
+
+real	11m58.330s
+user	0m38.764s
+sys	1m50.640s
++ timeout 2s tegrastats
+RAM 868/3965MB (lfb 473x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@33.5C CPU@36C iwlwifi@35C PMIC@100C GPU@35.5C AO@40.5C thermal@34.75C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 124/124
++ sleep 60
++ for i in {1..3}
++ timeout 2s tegrastats
+RAM 868/3965MB (lfb 473x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@32.5C CPU@35.5C iwlwifi@35C PMIC@100C GPU@34.5C AO@39.5C thermal@35C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 124/124
++ sudo ./sample_uff_ssd_rect
+../data/ssd/sample_unpruned_mobilenet_v2.uff
+Registering UFF model
+Registered Input
+Registered output NMS
+Creating engine
+Begin parsing model...
+End parsing model...
+Begin building engine...
+Time lapsed to create an engine: 453271ms
+End building engine...
+Created engine
+ Num batches  1
+ Data Size  270000
+*** deserializing
+3 Binding
+Allocating buffer sizes for binding index: 0 of size : 270000 * 4 B
+Allocating buffer sizes for binding index: 1 of size : 700 * 4 B
+Allocating buffer sizes for binding index: 2 of size : 1 * 4 B
+Time taken for inference per run is 262.235 ms.
+Time taken for inference per run is 262.122 ms.
+Time taken for inference per run is 262.145 ms.
+Time taken for inference per run is 262.244 ms.
+Time taken for inference per run is 262.168 ms.
+Time taken for inference per run is 262.088 ms.
+Time taken for inference per run is 262.111 ms.
+Time taken for inference per run is 262.095 ms.
+Time taken for inference per run is 262.153 ms.
+Time taken for inference per run is 262.091 ms.
+Average time spent per iteration is 262.145 ms.
+Time taken for inference is 262.091 ms.
+ KeepCount 100
+
+real	11m57.946s
+user	0m38.656s
+sys	1m51.212s
++ timeout 2s tegrastats
+RAM 868/3965MB (lfb 469x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@33.5C CPU@36C iwlwifi@35C PMIC@100C GPU@35.5C AO@40.5C thermal@35C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 166/166
++ sleep 60
++ sudo reboot now
+Connection to jetsonnano.local closed by remote host.
+Thu Jul  4 06:04:05 CEST 2019
++ for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
++ echo performance
++ sudo tee -a /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+performance
++ for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
++ echo performance
++ sudo tee -a /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor
+performance
++ for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
++ echo performance
++ sudo tee -a /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor
+performance
++ for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
++ echo performance
++ sudo tee -a /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
+performance
++ echo performance
++ sudo tee -a /sys/devices/57000000.gpu/devfreq/57000000.gpu/governor
+performance
++ cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
+performance
+performance
+performance
+performance
++ cat /sys/devices/57000000.gpu/devfreq/57000000.gpu/governor
+performance
++ cd /usr/src/tensorrt/bin
++ for i in {1..3}
++ timeout 2s tegrastats
+RAM 420/3965MB (lfb 811x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@31.5C CPU@34C iwlwifi@35C PMIC@100C GPU@34.5C AO@38.5C thermal@34.5C POM_5V_IN 1622/1622 POM_5V_GPU 0/0 POM_5V_CPU 124/124
++ sudo ./sample_uff_ssd_rect
+../data/ssd/sample_unpruned_mobilenet_v2.uff
+Registering UFF model
+Registered Input
+Registered output NMS
+Creating engine
+Begin parsing model...
+End parsing model...
+Begin building engine...
+Time lapsed to create an engine: 457359ms
+End building engine...
+Created engine
+ Num batches  1
+ Data Size  270000
+*** deserializing
+3 Binding
+Allocating buffer sizes for binding index: 0 of size : 270000 * 4 B
+Allocating buffer sizes for binding index: 1 of size : 700 * 4 B
+Allocating buffer sizes for binding index: 2 of size : 1 * 4 B
+Time taken for inference per run is 262.424 ms.
+Time taken for inference per run is 262.426 ms.
+Time taken for inference per run is 262.433 ms.
+Time taken for inference per run is 262.377 ms.
+Time taken for inference per run is 262.265 ms.
+Time taken for inference per run is 262.478 ms.
+Time taken for inference per run is 262.373 ms.
+Time taken for inference per run is 262.244 ms.
+Time taken for inference per run is 262.304 ms.
+Time taken for inference per run is 262.424 ms.
+Average time spent per iteration is 262.375 ms.
+Time taken for inference is 262.424 ms.
+ KeepCount 100
+
+real	12m4.252s
+user	0m38.028s
+sys	1m51.252s
++ timeout 2s tegrastats
+RAM 874/3965MB (lfb 466x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@33C CPU@35.5C iwlwifi@35C PMIC@100C GPU@35C AO@40.5C thermal@35.5C POM_5V_IN 1622/1622 POM_5V_GPU 0/0 POM_5V_CPU 166/166
++ sleep 60
++ for i in {1..3}
++ timeout 2s tegrastats
+RAM 874/3965MB (lfb 466x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@32.5C CPU@35.5C iwlwifi@35C PMIC@100C GPU@34.5C AO@39.5C thermal@35C POM_5V_IN 1622/1622 POM_5V_GPU 0/0 POM_5V_CPU 166/166
++ sudo ./sample_uff_ssd_rect
+../data/ssd/sample_unpruned_mobilenet_v2.uff
+Registering UFF model
+Registered Input
+Registered output NMS
+Creating engine
+Begin parsing model...
+End parsing model...
+Begin building engine...
+Time lapsed to create an engine: 453731ms
+End building engine...
+Created engine
+ Num batches  1
+ Data Size  270000
+*** deserializing
+3 Binding
+Allocating buffer sizes for binding index: 0 of size : 270000 * 4 B
+Allocating buffer sizes for binding index: 1 of size : 700 * 4 B
+Allocating buffer sizes for binding index: 2 of size : 1 * 4 B
+Time taken for inference per run is 261.957 ms.
+Time taken for inference per run is 262.038 ms.
+Time taken for inference per run is 262.007 ms.
+Time taken for inference per run is 261.931 ms.
+Time taken for inference per run is 261.968 ms.
+Time taken for inference per run is 261.927 ms.
+Time taken for inference per run is 261.841 ms.
+Time taken for inference per run is 262.036 ms.
+Time taken for inference per run is 261.951 ms.
+Time taken for inference per run is 261.956 ms.
+Average time spent per iteration is 261.961 ms.
+Time taken for inference is 261.956 ms.
+ KeepCount 100
+
+real	11m58.230s
+user	0m38.680s
+sys	1m50.772s
++ timeout 2s tegrastats
+RAM 876/3965MB (lfb 462x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@33C CPU@36C iwlwifi@35C PMIC@100C GPU@35C AO@40.5C thermal@35C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 166/166
++ sleep 60
++ for i in {1..3}
++ timeout 2s tegrastats
+RAM 875/3965MB (lfb 462x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@32.5C CPU@35.5C iwlwifi@35C PMIC@100C GPU@34.5C AO@39.5C thermal@35C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 124/124
++ sudo ./sample_uff_ssd_rect
+../data/ssd/sample_unpruned_mobilenet_v2.uff
+Registering UFF model
+Registered Input
+Registered output NMS
+Creating engine
+Begin parsing model...
+End parsing model...
+Begin building engine...
+Time lapsed to create an engine: 454065ms
+End building engine...
+Created engine
+ Num batches  1
+ Data Size  270000
+*** deserializing
+3 Binding
+Allocating buffer sizes for binding index: 0 of size : 270000 * 4 B
+Allocating buffer sizes for binding index: 1 of size : 700 * 4 B
+Allocating buffer sizes for binding index: 2 of size : 1 * 4 B
+Time taken for inference per run is 262.324 ms.
+Time taken for inference per run is 262.408 ms.
+Time taken for inference per run is 262.424 ms.
+Time taken for inference per run is 262.419 ms.
+Time taken for inference per run is 262.459 ms.
+Time taken for inference per run is 262.493 ms.
+Time taken for inference per run is 262.388 ms.
+Time taken for inference per run is 262.463 ms.
+Time taken for inference per run is 262.471 ms.
+Time taken for inference per run is 262.456 ms.
+Average time spent per iteration is 262.431 ms.
+Time taken for inference is 262.456 ms.
+ KeepCount 100
+
+real	11m59.013s
+user	0m38.636s
+sys	1m51.192s
++ timeout 2s tegrastats
+RAM 878/3965MB (lfb 441x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@33.5C CPU@36C iwlwifi@35C PMIC@100C GPU@35.5C AO@40.5C thermal@35.75C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 166/166
++ sleep 60
++ sudo reboot now
+Connection to jetsonnano.local closed by remote host.
+Thu Jul  4 06:45:20 CEST 2019
++ for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
++ echo performance
++ sudo tee -a /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+performance
++ for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
++ echo performance
++ sudo tee -a /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor
+performance
++ for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
++ echo performance
++ sudo tee -a /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor
+performance
++ for gov in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
++ echo performance
++ sudo tee -a /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
+performance
++ echo performance
++ sudo tee -a /sys/devices/57000000.gpu/devfreq/57000000.gpu/governor
+performance
++ cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
+performance
+performance
+performance
+performance
++ cat /sys/devices/57000000.gpu/devfreq/57000000.gpu/governor
+performance
++ cd /usr/src/tensorrt/bin
++ for i in {1..3}
++ timeout 2s tegrastats
+RAM 419/3965MB (lfb 812x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@31C CPU@34.5C iwlwifi@35C PMIC@100C GPU@33.5C AO@38C thermal@33.75C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 124/124
++ sudo ./sample_uff_ssd_rect
+../data/ssd/sample_unpruned_mobilenet_v2.uff
+Registering UFF model
+Registered Input
+Registered output NMS
+Creating engine
+Begin parsing model...
+End parsing model...
+Begin building engine...
+Time lapsed to create an engine: 457222ms
+End building engine...
+Created engine
+ Num batches  1
+ Data Size  270000
+*** deserializing
+3 Binding
+Allocating buffer sizes for binding index: 0 of size : 270000 * 4 B
+Allocating buffer sizes for binding index: 1 of size : 700 * 4 B
+Allocating buffer sizes for binding index: 2 of size : 1 * 4 B
+Time taken for inference per run is 261.48 ms.
+Time taken for inference per run is 261.432 ms.
+Time taken for inference per run is 261.579 ms.
+Time taken for inference per run is 261.573 ms.
+Time taken for inference per run is 261.344 ms.
+Time taken for inference per run is 261.469 ms.
+Time taken for inference per run is 261.507 ms.
+Time taken for inference per run is 261.471 ms.
+Time taken for inference per run is 261.399 ms.
+Time taken for inference per run is 261.42 ms.
+Average time spent per iteration is 261.467 ms.
+Time taken for inference is 261.42 ms.
+ KeepCount 100
+
+real	12m3.185s
+user	0m38.796s
+sys	1m50.708s
++ timeout 2s tegrastats
+RAM 864/3965MB (lfb 471x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@32.5C CPU@36C iwlwifi@35C PMIC@100C GPU@34.5C AO@40C thermal@35.5C POM_5V_IN 1622/1622 POM_5V_GPU 0/0 POM_5V_CPU 124/124
++ sleep 60
++ for i in {1..3}
++ timeout 2s tegrastats
+RAM 864/3965MB (lfb 471x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@32.5C CPU@35.5C iwlwifi@35C PMIC@100C GPU@34.5C AO@39.5C thermal@35C POM_5V_IN 1622/1622 POM_5V_GPU 0/0 POM_5V_CPU 124/124
++ sudo ./sample_uff_ssd_rect
+../data/ssd/sample_unpruned_mobilenet_v2.uff
+Registering UFF model
+Registered Input
+Registered output NMS
+Creating engine
+Begin parsing model...
+End parsing model...
+Begin building engine...
+Time lapsed to create an engine: 454200ms
+End building engine...
+Created engine
+ Num batches  1
+ Data Size  270000
+*** deserializing
+3 Binding
+Allocating buffer sizes for binding index: 0 of size : 270000 * 4 B
+Allocating buffer sizes for binding index: 1 of size : 700 * 4 B
+Allocating buffer sizes for binding index: 2 of size : 1 * 4 B
+Time taken for inference per run is 261.437 ms.
+Time taken for inference per run is 261.486 ms.
+Time taken for inference per run is 261.498 ms.
+Time taken for inference per run is 261.495 ms.
+Time taken for inference per run is 261.463 ms.
+Time taken for inference per run is 261.39 ms.
+Time taken for inference per run is 261.493 ms.
+Time taken for inference per run is 261.463 ms.
+Time taken for inference per run is 261.482 ms.
+Time taken for inference per run is 261.491 ms.
+Average time spent per iteration is 261.47 ms.
+Time taken for inference is 261.491 ms.
+ KeepCount 100
+
+real	11m58.186s
+user	0m38.184s
+sys	1m50.792s
++ timeout 2s tegrastats
+RAM 867/3965MB (lfb 470x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@33C CPU@36C iwlwifi@35C PMIC@100C GPU@35C AO@40.5C thermal@35.25C POM_5V_IN 1619/1619 POM_5V_GPU 0/0 POM_5V_CPU 124/124
++ sleep 60
++ for i in {1..3}
++ timeout 2s tegrastats
+RAM 867/3965MB (lfb 470x4MB) CPU [0%@1428,0%@1428,0%@1428,0%@1428] EMC_FREQ 0% GR3D_FREQ 0% PLL@32.5C CPU@35.5C iwlwifi@35C PMIC@100C GPU@34.5C AO@39.5C thermal@34.75C POM_5V_IN 1622/1622 POM_5V_GPU 0/0 POM_5V_CPU 124/124
++ sudo ./sample_uff_ssd_rect
+../data/ssd/sample_unpruned_mobilenet_v2.uff
+Registering UFF model
+Registered Input
+Registered output NMS
+Creating engine
+Begin parsing model...
+End parsing model...
+Begin building engine...
+Time lapsed to create an engine: 453342ms
+End building engine...
+Created engine
+ Num batches  1
+ Data Size  270000
+*** deserializing
+3 Binding
+Allocating buffer sizes for binding index: 0 of size : 270000 * 4 B
+Allocating buffer sizes for binding index: 1 of size : 700 * 4 B
+Allocating buffer sizes for binding index: 2 of size : 1 * 4 B
+^C^C
+localhost(~): ^C
+localhost(~): ^C
+localhost(~): ^C
+localhost(~): ^C
+localhost(~): ^C
+localhost(~): ^C
+localhost(~): ^C
+localhost(~): ^C
+localhost(~): ^C
+localhost(~): ^C
+localhost(~): ^C
+localhost(~): ^C
+localhost(~): ^C
+localhost(~): ^C
+localhost(~): ^C
+localhost(~): ^C
+localhost(~): ^C
+localhost(~): ^C
+localhost(~): ^C
+localhost(~): ^C
+localhost(~): ^C
+localhost(~): ^C
+localhost(~): ^C
+localhost(~): ^C
+localhost(~): ^C
+localhost(~): ^C
+localhost(~): ^C
+localhost(~): exit
+
+Script done on Thu Jul  4 07:19:26 2019
